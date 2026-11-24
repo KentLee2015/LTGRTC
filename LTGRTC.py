@@ -292,7 +292,7 @@ def ltgrtc(dense_tensor_np, sparse_tensor_np, tau_t, alpha, rho0, lambda0,
     return tensor_hat_cpu
 
 if __name__ == "__main__":    
-    dense_mat = np.load('../input/datasets/kent2020/transdim/Portland-data-set/volume.npy')
+    dense_mat = np.load('/datasets/kent2020/transdim/Portland-data-set/volume.npy')
     dim1, dim2 = dense_mat.shape
     dim = np.array([dim1, 96, 31])
     dense_tensor = mat2ten0(dense_mat, dim, 0)
